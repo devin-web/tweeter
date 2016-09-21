@@ -2,11 +2,9 @@
 $(document).ready(function() {
 
   function updateTextCount( curDomObject ) {
-    //var charCount = $('.new-tweet textarea').val().length;
     var curParent = $( curDomObject ).parent();
     var charCount = curParent.find( 'textarea' ).val().length;
     console.log( charCount );
-    //$('.counter').text( 140 - charCount );
     var curCounter = curParent.find( '.counter' );
     curCounter.text( 140 - charCount );
     if( charCount > 140 )
@@ -19,12 +17,7 @@ $(document).ready(function() {
     }
   }
 
-  $('.new-tweet textarea').on('focus', function() {
-    console.log( this );
-    updateTextCount( this );
-  });
-
-  $('.new-tweet textarea').on( 'keyup', function() {
+  $('.new-tweet textarea').on('focus keyup', function() {
     updateTextCount( this );
   });
 });

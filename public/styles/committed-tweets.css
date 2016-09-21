@@ -1,0 +1,55 @@
+.committed-tweets {
+  margin-top: 40px;
+
+}
+
+.committed-tweets article {
+  border-radius: 4px;
+  border: 1px solid;
+  border-color: #bbb;
+}
+
+.committed-tweets header {
+  background-color: #ddd;
+}
+
+.committed-tweets img {
+  width: 65px;
+  height: 65px;
+  margin-left: 10px;
+  /*padding-top: 40px*/
+}
+
+.committed-tweets h3 {
+  color: black;
+  vertical-align: top;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.committed-tweets h5 {
+  float: right;
+  color: black;
+  margin-right: 15px;
+}
+
+.committed-tweets p {
+  margin: 10px 10px 10px 10px;
+}
+
+.committed-tweets footer {
+  border-top: 1px solid;
+  color: #aaa;
+  padding: 10px 0px 10px 0px;
+}
+
+.committed-tweets .date {
+   margin: 10px;
+}
+
+.committed-tweets .icons {
+   float: right;
+   display: none;
+   color: #00a087;
+   padding: 0px 10px;
+}

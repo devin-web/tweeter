@@ -17,15 +17,23 @@
     <!-- New Tweet CSS -->
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
+    <!-- Committed Tweets -->
+    <link rel="stylesheet" href="/styles/committed-tweets.css" type="text/css" />
+
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
 
+    <!-- Hover JS -->
+    <script type="text/javascript" src="/scripts/hover.js"></script>
+
     <!-- Char counter JS -->
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 
+    <!-- JS for font glyphs -->
+    <script type="text/javascript" src="https://use.fontawesome.com/898bea40a1.js"></script>
   </head>
 
   <body>
@@ -45,6 +53,24 @@
           <input type="submit" value="Tweet">
           <span class="counter">140</span>
         </form>
+      </section>
+      <section class="committed-tweets">
+        <article>
+          <header>
+           <img src="/images/bird.png"> <h3>Bill Fields</h3> <h5>@mrfields</h5>
+          </header>
+          <p> little tweet here </p>
+          <footer>
+            <span class=date>
+              10 days ago
+            </span>
+            <span class=icons>
+              <i class="fa fa-flag" aria-hidden="true"></i>
+              <i class="fa fa-retweet" aria-hidden="true"></i>
+              <i class="fa fa-heart" aria-hidden="true"></i>
+            </span>
+          </footer>
+        </article>
       </section>
     </main>
     <!-- <META HTTP-EQUIV="refresh" CONTENT="15"> -->
