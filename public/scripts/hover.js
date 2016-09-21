@@ -1,4 +1,5 @@
-$(document).ready(function() {
+//$(document).ready(function() {
+function registerHoverFns(){
   $('#committed-tweets article').on('mouseover', function() {
     $( this ).find( '.icons' ).css('display', 'initial'); //maybe should be inline?
     console.log("mouseover");
@@ -8,4 +9,5 @@ $(document).ready(function() {
     $( this ).find( '.icons' ).css('display', 'none');
     console.log("mouseout");
   });
-});
+}
+//});

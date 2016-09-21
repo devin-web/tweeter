@@ -1,5 +1,6 @@
 //is the same as $(document).ready( function {...});
-$(function() {
+//$(function() {
+function registerTweetSubissionFn() {
   var $button = $('#submitNewTweet');
   $button.on('submit', function (event) {
 
@@ -19,4 +20,4 @@ $(function() {
       }
     });
   });
-});
+}
