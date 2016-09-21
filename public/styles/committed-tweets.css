@@ -40,7 +40,8 @@
 .committed-tweets footer {
   border-top: 1px solid;
   color: #aaa;
-  padding: 10px 0px 10px 0px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .committed-tweets .date {
