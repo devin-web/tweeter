@@ -16,8 +16,7 @@
 #committed-tweets img {
   width: 65px;
   height: 65px;
-  margin-left: 10px;
-  /*padding-top: 40px*/
+  margin: 10px;
 }
 
 #committed-tweets h3 {

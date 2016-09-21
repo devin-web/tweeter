@@ -4,7 +4,6 @@ $(document).ready(function() {
   function updateTextCount( curDomObject ) {
     var curParent = $( curDomObject ).parent();
     var charCount = curParent.find( 'textarea' ).val().length;
-    console.log( charCount );
     var curCounter = curParent.find( '.counter' );
     curCounter.text( 140 - charCount );
     if( charCount > 140 )
