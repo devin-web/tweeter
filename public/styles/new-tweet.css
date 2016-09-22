@@ -17,13 +17,15 @@ section h2 {
   position: relative;
   background-color: #ddd;
   color: #244751;
-  display: block;
+  display: none;
   width: 100%;
   border-radius: 4px;
   padding: 0px 10px 5px 10px;
+  overflow: hidden;
 }
 
 .new-tweet h2 {
+  margin-top: 0px;
   position: relative;
   top: 10px;
 }

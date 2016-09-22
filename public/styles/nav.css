@@ -3,6 +3,8 @@
   background-color: #00a087;
   color:#e8fdff;
   padding: 0 2em 0 2em;
+  /*display: flex;*/
+  /*justify-content: space-between;*/
 }
 
 #nav-bar .logo {
@@ -15,4 +17,25 @@
 #nav-bar .header {
   vertical-align: 80%;
   font-size: 200%;
+  margin:20px;
+}
+
+#nav-bar .buttons:hover {
+  background-color: #e0f0e7;
+}
+
+#nav-bar .buttons {
+  background-color: #c0d0c7;
+  color: #00a087;
+  border-radius: 10px;
+  float: right;
+  height: 60px;
+  margin-top: 10px;
+  padding-top: 0px;
+
+}
+
+#nav-bar .buttons h2 {
+  padding: 0px;
+  margin: 0px;
 }

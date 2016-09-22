@@ -34,6 +34,7 @@
 
 #committed-tweets p {
   margin: 10px 10px 10px 10px;
+  overflow-wrap: break-word;
 }
 
 #committed-tweets footer {

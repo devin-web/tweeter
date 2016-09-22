@@ -17,7 +17,7 @@ $(document).ready(function() {
         TweetToHTML.renderTweets( newTweetArray );
 
         registerHoverFns();
-        registerTweetSubissionFn();
+        registerTweetSubmissionFn();
         registerTypingFn();
       }
     });
@@ -34,6 +34,8 @@ var TweetToHTML = {
     var currentDate = new Date();
     var msOfTimeSincePost = currentDate - postedDate;
     var sOfTimeSincePost = msOfTimeSincePost/1000;
+
+
 
     if( sOfTimeSincePost > 60 ){
       var mOfTimeSincePost = sOfTimeSincePost/60;
