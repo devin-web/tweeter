@@ -3,6 +3,11 @@
   background-color: #00a087;
   color:#e8fdff;
   padding: 0 2em 0 2em;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
   /*display: flex;*/
   /*justify-content: space-between;*/
 }

@@ -1,9 +1,9 @@
 function registerHoverFns(){
-  $('#committed-tweets article').on('mouseover', function() {
-    $( this ).find( '.icons' ).css('display', 'initial'); //maybe should be inline?
+  $('#committed-tweets').on('mouseover', 'article', function() {
+    $( this ).find( '.icons' ).css('display', 'initial');
   });
 
-  $('#committed-tweets article').on('mouseout', function() {
+  $('#committed-tweets').on('mouseout', 'article', function() {
     $( this ).find( '.icons' ).css('display', 'none');
   });
 }

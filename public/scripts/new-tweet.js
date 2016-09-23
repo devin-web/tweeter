@@ -37,16 +37,13 @@ function registerTweetSubmissionFn() {
       return;
     }
 
-    console.log('Submit button clicked, performing ajax call...');
     $.ajax({
       url: theForm.attr('action'),
       method: theForm.attr('method'),
       data: theForm.serialize(),
       dataType: 'json',
       success: function ( data ) {
-        console.log( 'Success!' );
-        console.log('Success: ', data );
-        theForm.find('textarea').val('');
+        theForm[0].reset();//.find('textarea').val('');
         insertFirstTweet();
       }
     }); //ajax
