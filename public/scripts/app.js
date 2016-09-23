@@ -96,6 +96,5 @@ var TweetToHTML = {
 
 }
 
-//module.exports = TweetToHTML;
 
 

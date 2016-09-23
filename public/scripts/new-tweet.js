@@ -1,5 +1,3 @@
-//is the same as $(document).ready( function {...});
-//$(function() {
 
 function insertFirstTweet() {
   $.ajax({
@@ -8,11 +6,7 @@ function insertFirstTweet() {
     // Tell jQuery what kind of content you expect the server to send and it will parse it for you
     dataType: 'json',
     success: function ( newTweetArray ) {
-      // console.log( "Success on GET; Tweet Array length:", newTweetArray.length );
       var myElement = TweetToHTML.createTweetElement( newTweetArray[0] );
-    // takes return value and inserts it to the tweets container
-      console.log( "Inserting", myElement, "before", $('#committed-tweets:first-child' ));
-      // $('#committed-tweets').insertBefore( myElement, $('#committed-tweets:first-child' ));
       myElement.insertBefore( $('#committed-tweets').find( '>:first-child' ) );
     }
   });
@@ -56,7 +50,7 @@ function registerTweetSubmissionFn() {
         insertFirstTweet();
       }
     }); //ajax
-  }); //on subnmit
+  }); //on submit
 
   var $composeButton = $( '#composeButton' );
   $composeButton.on('click', function() {

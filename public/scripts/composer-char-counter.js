@@ -1,5 +1,4 @@
 
-// $(document).ready(function() {
 
 function updateTextCount( curDomObject ) {
   var curParent = $( curDomObject ).parent();
@@ -21,4 +20,3 @@ function registerTypingFn() {
     updateTextCount( this );
   });
 }
-// });
